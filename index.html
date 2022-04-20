@@ -1,42 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+      <meta charset="UTF-8">
     <style type="text/css">
-       .lego{
-         display: grid;
-         grid-template-columns: 25% 25% 25% 25%;
-         grid-template-rows: 25% 25% 25% 25%;
-        
+      
+      *{
+         margin: 0;
+         padding: 0;
+         list-style: none;
        }
-       .red{
-         grid-row:  3/5;
-         grid-column: 3/5;
-
+       .banner{
+         width: 100%;
+         height: 100vh;
+         background-color: #ccc;
+         background: linear-gradient(115deg, #7bf 50%,transparent 50%%) center center/100% 100%,
+         ;
        }
-       .yellow{
-       grid-row: 1/3;
-       grid-column: 1/3;
-
+       .container{
+           height: 100%;
+           height: 1200px;
+           margin: auto;
        }
-       .green{
-        grid-row: 3/5;
-        grid-column: 1/3;
-
+       .banner-txt{
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: flex-start;
        }
-       .blue{
-       grid-row: 1/3;
-       
-       grid-column: 3/5;
-
+       .banner-txt h1{
+           font-size: 80px;
+           border-bottom: 1px solid #333;
        }
-        button{
-            width: 150px;
-            height: 30;
-            background-color: rgb(255, 255, 255);
-        }
+       .banner-txt h1 small{
+           display: block;
+           font-size: 53px;
+       }
+       .banner-txt h2{
+         font-size: 50px;
+       }
+       .banner-txt p{
+           font-size: 30px;
+       }
+     
     </style>
    </head>
-  <body bgcolor="pink">
-    <div style="text-align:center;color: rgb(0, 0, 0);"><h1>Test</h1></div>
+  <body>
+      <div class="banner">
+          <div class="container">
+              <div class="banner-txt">
+                  <h1>
+                      sss
+                  </h1>
+                  <small>
+                      qqq
+                  </small>
+                   <h2>asda</h2>
+                   <p>asfkkfa<br>dfgdfg</p>
+                 </div>
+            </div>
+         </div>
+                   
+                   
+<!--<div style="text-align:center;color: rgb(0, 0, 0);"><h1>Test</h1></div>
     <h2 style="background-color: aliceblue;text-align:center;">你叫誰尖頭阿</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPMjRuVKplQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
     <h2 style="text-align:center;background-color: aliceblue;">金剛屁屁</h2>
@@ -47,18 +73,19 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wuaxyw_Cneg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
     <h2 style="background-color: aliceblue;text-align:center;">一中顏值天花板</h2>
     
-  <div class="lego">
-     <img  class="yellow" width="300" height="350" src="https://scontent.fkhh4-1.fna.fbcdn.net/v/t1.15752-9/278642975_403695321200119_2326769545770798774_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=FWb62lLeDAQAX-KieQf&_nc_ht=scontent.fkhh4-1.fna&oh=03_AVLV_p1olnvfIAHd_aE99KdjJUjwtc5BrTU9Sm8yRPXk1A&oe=6282750C"><br/>
-     <img  class="blue"width="300" height="350" src="https://scontent.fkhh4-2.fna.fbcdn.net/v/t1.15752-9/271716376_1654547748227883_6117780553044193827_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=kW3Y7kY_8oEAX-la9l0&tn=BoNvBNrLQRG5SPWx&_nc_ht=scontent.fkhh4-2.fna&oh=03_AVIkFvgcDB0KQTJvHMC_uOJS7lwT1yytWAi7Xl5by-yArQ&oe=62809EDA"><br/>
+  <div>
+     <img   width="300" height="350" src="https://scontent.fkhh4-1.fna.fbcdn.net/v/t1.15752-9/278642975_403695321200119_2326769545770798774_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=FWb62lLeDAQAX-KieQf&_nc_ht=scontent.fkhh4-1.fna&oh=03_AVLV_p1olnvfIAHd_aE99KdjJUjwtc5BrTU9Sm8yRPXk1A&oe=6282750C"><br/>
+     <img  width="300" height="350" src="https://scontent.fkhh4-2.fna.fbcdn.net/v/t1.15752-9/271716376_1654547748227883_6117780553044193827_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=kW3Y7kY_8oEAX-la9l0&tn=BoNvBNrLQRG5SPWx&_nc_ht=scontent.fkhh4-2.fna&oh=03_AVIkFvgcDB0KQTJvHMC_uOJS7lwT1yytWAi7Xl5by-yArQ&oe=62809EDA"><br/>
   </div>
   <h2 style="background-color: aliceblue;text-align:center;">一中模聯電神</h2>
-  <div class="lego">
-     <img class="yellow"  width="300" height="350" src="https://scontent.fkhh4-2.fna.fbcdn.net/v/t1.15752-9/277825594_1067058664164730_1237563522934569499_n.png?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=yGd3-Z6kIMwAX9LwtPv&_nc_ht=scontent.fkhh4-2.fna&oh=03_AVKs7eJOnjvBYNMpWYqaPlk5rWtk7_yFA4KRwRffhnk51w&oe=628180CF">&ensp;&ensp;<br/>
-     <img class="blue" width="400" height="350" src="https://scontent.fkhh4-2.fna.fbcdn.net/v/t1.15752-9/277913403_2524823694316869_8002851175974411900_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=JE0eeRuKulcAX8DAkI4&_nc_ht=scontent.fkhh4-2.fna&oh=03_AVKIwnmNzk62RZH5htaSgWBthSKaiad0-AaamFEO7poRWQ&oe=6281936D">&ensp;&ensp;<br/>
+  <div>
+     <img   width="300" height="350" src="https://scontent.fkhh4-2.fna.fbcdn.net/v/t1.15752-9/277825594_1067058664164730_1237563522934569499_n.png?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=yGd3-Z6kIMwAX9LwtPv&_nc_ht=scontent.fkhh4-2.fna&oh=03_AVKs7eJOnjvBYNMpWYqaPlk5rWtk7_yFA4KRwRffhnk51w&oe=628180CF">&ensp;&ensp;<br/>
+     <img width="400" height="350" src="https://scontent.fkhh4-2.fna.fbcdn.net/v/t1.15752-9/277913403_2524823694316869_8002851175974411900_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=JE0eeRuKulcAX8DAkI4&_nc_ht=scontent.fkhh4-2.fna&oh=03_AVKIwnmNzk62RZH5htaSgWBthSKaiad0-AaamFEO7poRWQ&oe=6281936D">&ensp;&ensp;<br/>
   </div>
-    <!--<input type="text" size="50" style="text-align:center;" placeholder="你叫誰尖頭阿"><br/>-->
+    <input type="text" size="50" style="text-align:center;" placeholder="你叫誰尖頭阿"><br/>
      <br/><button type="button" onclick=" window.open('https://truth.bahamut.com.tw/s01/201906/5ceb3ffd92b9b3f63d6be2a38305650a.JPG')">尖~~頭~~拉~~瑞</button><br/>
     <body>
       <a style="color: rgb(0, 0, 0);" href="https://github.com/jentalray/jentalray.ghub.io/blob/main/index.html">jentalray's github</a></div><br/>
-  </div>
+  </div>-->
+  </body>
 </html>
