@@ -9,12 +9,15 @@
         height: 2000px;
         font-family: 'Titillium Web', sans-serif;
       }
-     
+      .content1{
+        
+      }
       .main-header{
-        background-color: black;
+        background-color:black;
         position: fixed;
         width: 99%;
-
+        top: 0;
+        
       }
       .main-header .container{
           display: flex;
@@ -36,7 +39,7 @@
       }
       .main-header .main-nav a{
         text-decoration: none;
-        color: #fff;
+        color: rgb(255, 255, 255);
         padding: 5px 1em;
         position: relative;
         transform: translateY(0px);
@@ -110,37 +113,29 @@
     </style>
    </head>
   <body>
-   <!-- <div class="wrap">
-      <div class="item1">
-        <img src="https://www.cpbl.com.tw/theme/common/images/project/logo_new.png" style="height: 200px; margin: auto; display: block;"> 
-        <div class="txt">
-          <h2>中華職棒</h2>
-        </div>
-     </div>
-   </div>
-  -->
   <header class="main-header">
     <div class="container">
       <a href="#" class="logo">
         <img src="https://www.cpbl.com.tw/theme/common/images/project/logo_new.png">
       </a>
       <nav class="main-nav">
-          <a href="#">統一7-ELEVEn獅</a>
-          <a href="#">富邦悍將</a>
-          <a href="#">味全龍</a>
-          <a href="#">樂天桃猿</a>
-          <a href="#">中信兄弟</a>
-          <div id="times"></div>
-            
-          
+          <a href="#1">統一7-ELEVEn獅</a>
+          <a href="#2">富邦悍將</a>
+          <a href="#3">味全龍</a>
+          <a href="#4">樂天桃猿</a>
+          <a href="#5">中信兄弟</a>
+          <div id="times"></div> 
       </nav>
     </div>
   </header>
-  
-  
-  <div id="times">
-            
+  <div>
+     <h2 id="1">統一7-ELEVEn獅</h2>
+     <div>中華職棒開朝元老之一，也是至今唯一無易主過並持續參賽的球隊。主場為臺南市立棒球場。統一獅於聯盟元年開幕戰中擊敗兄弟象，成為中華職棒首支獲勝球隊。加入中職至今，累計共取得10次總冠軍及15次季冠軍，其中10次總冠軍為各隊之冠。<br>
+      統一獅的前身為1989年創立的統一棒球隊。1990年中華職棒成立，統一棒球隊抽籤決定以獅為吉祥物，遂改名為統一獅，成為4支創始球隊之一。2008年，母企業統一企業有鑑於統一超商7-Eleven為台灣最知名之統一集團關係企業，指示統一獅將客場球衣主題字改為7-Eleven商標字體；但中華職棒規定球衣主題字只能使用隊名，於是球團於2月21日註冊隊名更改為統一7-ELEVEn獅，成為中華職棒首次有企業品牌名稱加入隊名的球隊。<br>
+      由於球隊母企業統一企業總公司設於臺南市永康區，故統一7-ELEVEn獅以台南市為根據地。統一獅於1999年認養臺南市立棒球場，取得經營權，為中職首支認養球場的球隊。1997年台灣大聯盟成立以前為全台灣唯一的南部職棒球隊，有「南霸天」之稱。現今仍為中華職棒最多勝場、最高勝率、參與季後賽次數最多、全壘打最多，和拿下最多台灣大賽冠軍的球隊。<br></div>
   </div>
+            
+  
   
   <script type="text/javascript">
       
@@ -159,7 +154,7 @@
       document.getElementById("times").innerHTML=getDate();
 
   </script>
-
+    
 
 
 
