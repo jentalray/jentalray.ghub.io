@@ -1,143 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
    
     <meta charset="UTF-8">
     <style type="text/css">
- 
-*{
-           margin: 0;
-           padding: 0;
-           list-style: none;
-           font-family: 'Noto Sans TC', sans-serif;
-       }
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Titillium+Web:wght@300&display=swap');
+      body{
+        height: 2000px;
+        font-family: 'Titillium Web', sans-serif;
+      }
+     
+      .main-header{
+        background-color: black;
+        position: fixed;
+       width: 100%;
 
-.main-header{
-   background: linear-gradient(0deg,#fff,#C4E1FF);
+      }
+      .main-header .container{
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          max-width: 1200px;
+          margin: auto;
+      }
+      .main-header .logo{
+          width: 100px;
+      }
+      .main-header .logo img{
+          width: 100%;
+          vertical-align: middle;
+      }
+      .main-header .main-nav{
+          margin: auto;
+          display: flex;
+      }
+      .main-header .main-nav a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 1em;
+        position: relative;
+        transform: translateY(0px);
+        transition: .3s;
+      }
+      .main-header .main-nav a:hover{
+        transform: translateY(-5px);
 
-}
-.main-header .container{
-    display: flex;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-.main-header .logo{
-    width: 100px;
-}
-.main-header .logo img{
-    width: 100%;
-    vertical-align: middle;
-}
-.main-header .main-nav{
-   margin: auto;
-}
-.main-header .main-nav a{
-   text-decoration: none;
-   color: bisque;
-   padding: 5px 1em;
-   position: relative;
-   transform: translateY(0px);
-   transition: .3s;
-}
-.main-header .main-nav a:hover{
-    transform: translateY(-10px);
-}
-.main-header .main-nav a:after{
-content: '';
-position: absolute;
-left: 50%;
-right: 50%;
-bottom: -5px;
-height: 0;
-border-bottom: 1px solid #fff;
-transition: .3s;
-}
-.main-header .main-nav a:hover:after{
-    left: 0;
-    right: 0;
-}
-.main-header .header-search{
-    display: flex;
-}
-.main-header .header-search button,.main-header .header-search input{
-   border: none;
-   background-color: #fff;
-   padding: 5px 10px;
-}
-.main-header .header-search button:focus,
-.main-header .header-search input:focus{
-    outline: none;
-}
-.main-header .header-search button{
-    border-radius: 0 200px 200px 0;
-}
-.main-header .header-search input{
-    border-radius: 200px 0 0 200px;
-}
-       /*-->.wrap{
-           width: 100% ;
-           display: flex; 
-       }
-       .item1{
-           width: 33.5%;
-           position: relative;
-       }
-       .item2{
-           width: 45%;
-           position: relative;
-       }
-       
-       .item1 .txt,.item2 .txt{
-           position: absolute;
-           top: 0;
-           right: 0;
-           bottom: 0;
-           left: 0;
-           padding: 20px;
-           background-color: rgba(0,0,0,.6);
-           display: flex;
-           justify-content: center;
-           flex-direction: column;
-           opacity: 0;
-          transition: .5s;
-       }
-       .item1:hover .txt,.item2:hover .txt{
-           opacity: 1;
-       }
-       .item1 h2,.item2 h2{
-           font-size: 40px;
-           color: coral;
-           font-weight: 500;
-       }
-       .item1 a,.item2 a{
-          font-size: 18px;
-          color: #fff;
+      }
+      .main-header .main-nav a:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        height: 0;
+        bottom: -5px;
+        border-bottom: 1px solid #fff;
+        transition: .3s;
+      }
+      .main-header .main-nav a:hover:after{
+        left: 0;
+        right: 0;
+      }
+      .main-header .main-nav #times{
+        padding: 5px 1em;
+        color: #fff;
+        position: relative;
 
-       }*/
+      }
+      /********************************/
+        .wrap{
+            display: flex; 
+            display: block;
+            margin: auto;
+        }
+        .item1{
+            
+            position: relative;
+        }
+        
+        .item1 .txt{
+          
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(0,0,0,.6);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 1;
+            transition: .3s;
+        }
+        .item1:hover .txt{
+            opacity: 1;
+        }
+        .item1 h2{
+        
+            font-size: 80px;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            display: block;
+            margin: auto;           
+        }
+        .item1 a{
+            font-size: 18px;
+            color: #fff;
+        }
     </style>
    </head>
   <body>
- 
-
- <header class="main_header">
+   <!-- <div class="wrap">
+      <div class="item1">
+        <img src="https://www.cpbl.com.tw/theme/common/images/project/logo_new.png" style="height: 200px; margin: auto; display: block;"> 
+        <div class="txt">
+          <h2>中華職棒</h2>
+        </div>
+     </div>
+   </div>
+  -->
+  <header class="main-header">
     <div class="container">
-        <a href="#" class="logo">
-            <img src="https://www.cpbl.com.tw/theme/common/images/project/logo_new.png" alt="中華職棒">
-        </a>
-       <nav class="main-nav">
-           <a href="#">統一獅</a>
-           <a href="#">富邦悍將</a>
-           <a href="#">味全龍</a>
-           <a href="#">樂天桃猿</a>
-           <a href="#">中信兄弟</a>
-       </nav>
-       <form class="header-search">
-        <input type="search" name="" id="">
-        <button><i class="fa fa-search"></i> </button>
-       </form>
+      <a href="#" class="logo">
+        <img src="https://www.cpbl.com.tw/theme/common/images/project/logo_new.png">
+      </a>
+      <nav class="main-nav">
+          <a href="#">統一7-ELEVEn獅</a>
+          <a href="#">富邦悍將</a>
+          <a href="#">味全龍</a>
+          <a href="#">樂天桃猿</a>
+          <a href="#">中信兄弟</a>
+          <div id="times"></div>
+            
+          
+      </nav>
     </div>
- </header>
+  </header>
+  
+  
+  <div id="times">
+            
+  </div>
+  
+  <script type="text/javascript">
+      
+      function getDate(){
+          
+          var date = new Date();
+         
+          var date1 = date.toLocaleString();
+          
+          var div1 = document.getElementById("times");
+          
+          div1.innerHTML = date1;
+      }
+    
+      setInterval("getDate()",1000);
+      document.getElementById("times").innerHTML=getDate();
+
+  </script>
+
 
 
 
