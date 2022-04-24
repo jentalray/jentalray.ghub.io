@@ -46,12 +46,32 @@
       .content img{
         width:13cm;
         height:9cm;
-        display: block;
-        padding-left: 1px;
         float: left;
+        position: relative;
+        padding-left: 1px;
+      }
+      .content .txt{
+        position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(0,0,0,.6);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: .3s;
+      }
+      .content img:hover .txt{
+       opacity: 1;
       }
       .content .img-word{
          line-height: 50px;       
+      }
+      .content h2{
+        border-bottom: 2px solid #000000;
       }
       .content h3{
           font-size: 80px;
@@ -198,9 +218,11 @@
       由於球隊母企業統一企業總公司設於臺南市永康區，故統一7-ELEVEn獅以台南市為根據地。統一獅於1999年認養臺南市立棒球場，取得經營權，為中職首支認養球場的球隊。1997年台灣大聯盟成立以前為全台灣唯一的南部職棒球隊，有「南霸天」之稱。現今仍為中華職棒最多勝場、最高勝率、參與季後賽次數最多、全壘打最多，和拿下最多台灣大賽冠軍的球隊。<br>
      </p>
      <h2>主場<br></h2>
-     <img src='https://s.yimg.com/ny/api/res/1.2/SKwkY3gLIJxrkj4OBvcXaQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUxNg--/https://s.yimg.com/uu/api/res/1.2/L2A24ARB24wiHGjiFOiIOg--~B/aD00MzA7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/tsna.com.tw/95c9ccbf89a630ca2283a835c8ea12b5'>
+     <div class="txt">台南市立棒球場</div>
+     <img src="https://s.yimg.com/ny/api/res/1.2/SKwkY3gLIJxrkj4OBvcXaQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUxNg--/https://s.yimg.com/uu/api/res/1.2/L2A24ARB24wiHGjiFOiIOg--~B/aD00MzA7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/tsna.com.tw/95c9ccbf89a630ca2283a835c8ea12b5">
      <div class="img-word"> 臺南市立棒球場是臺灣的一座棒球場，坐落於臺南市南區的臺南運動公園內，與臺南市立體育場為<br>&ensp;&ensp;鄰，由於位於都會區內，交通方便，且鄰近商業區，但停車腹地不大，因此每逢職棒比賽，停車不易交通壅塞。<br>&ensp; &ensp;臺南市立棒球場在臺灣有明顯主場特色，為中華職棒統一7-ELEVEn獅隊的主場。過去，台灣大聯盟的嘉南勇士隊亦偶爾利用此球場作為主場。<br></div>
-    
+     <p>圖片來源:&ensp;<a href="https://tw.news.yahoo.com/%E5%8F%B0%E5%8D%97%E7%90%83%E5%A0%B4%E7%A2%BA%E8%A8%BA%E8%B6%B3%E8%B7%A1-%E7%B5%B1-%E7%8D%85%E5%9B%9E%E6%87%89-%E6%9C%AA%E5%92%8C%E9%9A%8A%E8%81%B7%E5%93%A1%E6%8E%A5%E8%A7%B8-092321911.html">Yahoo!新聞</a></p>
+     
    </div>  
        
 
