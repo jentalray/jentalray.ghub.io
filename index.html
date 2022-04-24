@@ -9,14 +9,73 @@
         height: 2000px;
         font-family: 'Titillium Web', sans-serif;
       }
-      .content1{
-        
+     
+      /*******排版***************/
+     
+      .head{
+        height: 5.3%;
+        text-align: center;
+        line-height: 100px;
       }
+      .left-side{
+        height: 90%;
+        width: 150px;
+        line-height: 50px;
+        float: left;
+        border-right: 3px solid #000000;
+        margin-left: 20px;
+      }
+      .left-side img{
+        height: 100px;
+        width: 100px;
+        padding-right: 1px;
+        padding-left: 3px;
+        transition: .3s;
+      }
+      .left-side img:hover{
+        width: 125px;
+        height: 125px;
+      }
+      .content{
+        height: 90%;
+        text-align:center;
+        line-height: 50px;
+        padding-left: 200px;
+        padding-right: 80px;
+      }
+      .content img{
+        width:13cm;
+        height:9cm;
+        display: block;
+        padding-left: 1px;
+        float: left;
+      }
+      .content .img-word{
+         line-height: 50px;       
+      }
+      .content h3{
+          font-size: 80px;
+          color: rgb(255, 255, 255);
+          font-weight: 500;
+          display: block;
+          margin: auto;  
+      }
+      .footer{
+        text-align: center;
+        line-height: 100%;
+        height: 7%;
+        width: 100%;
+      }
+      
+      /******************導覽列*********************/
+      
       .main-header{
-        background-color:black;
+        background-color:rgba(0,0,0,.7);
         position: fixed;
-        width: 99%;
+        width:100%;
         top: 0;
+        left: 0;
+        right: 0;
         
       }
       .main-header .container{
@@ -69,19 +128,19 @@
         position: relative;
 
       }
-      /********************************/
-        .wrap{
+     
+      /*******************圖片互動*************************/
+      
+      .wrap1{
             display: flex; 
             display: block;
             margin: auto;
         }
         .item1{
-            
             position: relative;
         }
         
         .item1 .txt{
-          
             position: absolute;
             top: 0;
             right: 0;
@@ -92,14 +151,13 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            opacity: 1;
+            opacity: 0;
             transition: .3s;
         }
         .item1:hover .txt{
             opacity: 1;
         }
         .item1 h2{
-        
             font-size: 80px;
             color: rgb(255, 255, 255);
             font-weight: 500;
@@ -128,12 +186,26 @@
       </nav>
     </div>
   </header>
-  <div>
-     <h2 id="1">統一7-ELEVEn獅</h2>
-     <div>中華職棒開朝元老之一，也是至今唯一無易主過並持續參賽的球隊。主場為臺南市立棒球場。統一獅於聯盟元年開幕戰中擊敗兄弟象，成為中華職棒首支獲勝球隊。加入中職至今，累計共取得10次總冠軍及15次季冠軍，其中10次總冠軍為各隊之冠。<br>
-      統一獅的前身為1989年創立的統一棒球隊。1990年中華職棒成立，統一棒球隊抽籤決定以獅為吉祥物，遂改名為統一獅，成為4支創始球隊之一。2008年，母企業統一企業有鑑於統一超商7-Eleven為台灣最知名之統一集團關係企業，指示統一獅將客場球衣主題字改為7-Eleven商標字體；但中華職棒規定球衣主題字只能使用隊名，於是球團於2月21日註冊隊名更改為統一7-ELEVEn獅，成為中華職棒首次有企業品牌名稱加入隊名的球隊。<br>
-      由於球隊母企業統一企業總公司設於臺南市永康區，故統一7-ELEVEn獅以台南市為根據地。統一獅於1999年認養臺南市立棒球場，取得經營權，為中職首支認養球場的球隊。1997年台灣大聯盟成立以前為全台灣唯一的南部職棒球隊，有「南霸天」之稱。現今仍為中華職棒最多勝場、最高勝率、參與季後賽次數最多、全壘打最多，和拿下最多台灣大賽冠軍的球隊。<br></div>
+  <div class="head"></div>
+  <div class="left-side">
+    <img src="https://dev.cpbl.com.tw/theme/client/images/logo_lions_large.png">
   </div>
+  <div id="1"></div>
+  <div class="content">
+     <h2>統一7-ELEVEn獅</h2>
+     <p>中華職棒開朝元老之一，也是至今唯一無易主過並持續參賽的球隊。主場為臺南市立棒球場。統一獅於聯盟元年開幕戰中擊敗兄弟象，成為中華職棒首支獲勝球隊。加入中職至今，累計共取得10次總冠軍及15次季冠軍，其中10次總冠軍為各隊之冠。
+      統一獅的前身為1989年創立的統一棒球隊。1990年中華職棒成立，統一棒球隊抽籤決定以獅為吉祥物，遂改名為統一獅，成為4支創始球隊之一。2008年，母企業統一企業有鑑於統一超商7-Eleven為台灣最知名之統一集團關係企業，指示統一獅將客場球衣主題字改為7-Eleven商標字體；但中華職棒規定球衣主題字只能使用隊名，於是球團於2月21日註冊隊名更改為統一7-ELEVEn獅，成為中華職棒首次有企業品牌名稱加入隊名的球隊。
+      由於球隊母企業統一企業總公司設於臺南市永康區，故統一7-ELEVEn獅以台南市為根據地。統一獅於1999年認養臺南市立棒球場，取得經營權，為中職首支認養球場的球隊。1997年台灣大聯盟成立以前為全台灣唯一的南部職棒球隊，有「南霸天」之稱。現今仍為中華職棒最多勝場、最高勝率、參與季後賽次數最多、全壘打最多，和拿下最多台灣大賽冠軍的球隊。<br>
+     </p>
+     <h2>主場<br></h2>
+     <img src='https://s.yimg.com/ny/api/res/1.2/SKwkY3gLIJxrkj4OBvcXaQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUxNg--/https://s.yimg.com/uu/api/res/1.2/L2A24ARB24wiHGjiFOiIOg--~B/aD00MzA7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/tsna.com.tw/95c9ccbf89a630ca2283a835c8ea12b5'>
+     <div class="img-word"> 臺南市立棒球場是臺灣的一座棒球場，坐落於臺南市南區的臺南運動公園內，與臺南市立體育場為<br>&ensp;&ensp;鄰，由於位於都會區內，交通方便，且鄰近商業區，但停車腹地不大，因此每逢職棒比賽，停車不易交通壅塞。<br>&ensp; &ensp;臺南市立棒球場在臺灣有明顯主場特色，為中華職棒統一7-ELEVEn獅隊的主場。過去，台灣大聯盟的嘉南勇士隊亦偶爾利用此球場作為主場。<br></div>
+    
+   </div>  
+       
+
+      
+  
             
   
   
