@@ -10,6 +10,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Titillium+Web:wght@300&display=swap');
       body{
         height: 6850px;
+      
         font-family: 'Titillium Web', sans-serif;
        
       }
@@ -97,19 +98,29 @@
           margin: auto;  
       }
       .footer{
-        height: 4%;
+        height: 2%;
         width: 96.5%;
-        background-image: url('https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.15752-9/282248932_590432915584921_9096559129317315210_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=sIbuSl1dP08AX8YdNnN&_nc_ht=scontent.fkhh1-1.fna&oh=03_AVKuy0MDCIXacycz4wNc4XFj80G_rpbdMAml7kB68VbxMg&oe=6292C832');
+        background-image: url('https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.15752-9/283280201_771842987508063_5726342308948191010_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=4qJiP7Zlnc8AX_6__5K&tn=3UCtzT9fYaoH9LEC&_nc_ht=scontent.fkhh1-2.fna&oh=03_AVKRRUHAqP3A33_2FeqBQhgI_taKqra9-QaTWdnTusHezg&oe=62B96BAA');
         background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
+        opacity: 0.7;
         padding: 30px;
         margin: auto;
-       
       }
+      .footer a{
+        color: aliceblue;
+        transition: .4s;
+        text-decoration: none;
+      }
+      .footer a:hover{
+       position: relative;
+       bottom: 3px;
+       border-bottom: 1px dashed #fff;
+      }
+   
       /******************導覽列*********************/
       
       .main-header{
+        opacity: 0;
         background-color:rgba(0,0,0,.75);
         position: fixed;
         z-index: 3;
@@ -117,7 +128,11 @@
         top: 0;
         left: 0;
         right: 0;
-        
+        transition-delay: .3s;
+        transition: .5s;
+      }
+      .main-header:hover{
+        opacity: 1;
       }
       .main-header .container{
           display: flex;
@@ -167,7 +182,6 @@
         padding: 5px 1em;
         color: #fff;
         position: relative;
-        
       }
      
       /*******************圖片互動*************************/
@@ -290,7 +304,7 @@
     </div>
   </div>
   <div class="footer">
-    <h4 style="text-align:right; position: relative; top: 235px; color: #fff; font-size: larger;" >資料來源:&ensp;<a href="https://zh.wikipedia.org/zh-tw/Wikipedia:%E9%A6%96%E9%A1%B5" style="color: aliceblue;"  target="_blank">維基百科</a>、<a href="http://twbsball.dils.tku.edu.tw/wiki/index.php/%e9%a6%96%e9%a0%81" style="color: aliceblue;" target="_blank">台灣棒球維基館</a></h4>
+    <h4 style="text-align:right; position: relative; top: 80px; right:-20px; color: #fff; font-size: large;" >資料來源:&ensp;<a href="https://zh.wikipedia.org/zh-tw/Wikipedia:%E9%A6%96%E9%A1%B5"   target="_blank">維基百科</a>、<a href="http://twbsball.dils.tku.edu.tw/wiki/index.php/%e9%a6%96%e9%a0%81"  target="_blank">台灣棒球維基館</a></h4>
    
     
   </div>
